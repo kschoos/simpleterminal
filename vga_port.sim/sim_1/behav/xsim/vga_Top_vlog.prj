@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vga_port.ip_user_files/bd/BRAM/ip/BRAM_blk_mem_gen_0_3/sim/BRAM_blk_mem_gen_0_3.v" \
+"../../../../vga_port.ip_user_files/bd/BRAM/sim/BRAM.v" \
+"../../../../vga_port.srcs/sources_1/imports/hdl/BRAM_wrapper.v" \
+"../../../../vga_port.srcs/sources_1/new/charBuffer.v" \
+"../../../../vga_port.srcs/sources_1/new/charToBmp.v" \
+"../../../../vga_port.srcs/sources_1/new/renderer.v" \
+"../../../../vga_port.srcs/sources_1/new/uart.v" \
+"../../../../vga_port.srcs/sources_1/new/vga640x480.v" \
+"../../../../vga_port.srcs/sources_1/new/vga_Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
